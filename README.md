@@ -4,17 +4,13 @@ About Myself is an attempt to create an About.Me clone but only for myself.  Fee
 
 # Quick reference
 
--	**Maintained by**:  
-	[Matt Shields](https://gitlab.com/mattshields5)
+-	**Maintained by**: [Matt Shields](https://gitlab.com/mattshields5)
 
--   **Docker Hub**:
-    [About Myself](https://hub.docker.com/r/mattshields5/about-myself)
+-   **Docker Hub**: [About Myself](https://hub.docker.com/r/mattshields5/about-myself)
 
--	**Where to file issues**:  
-	[https://github.com/mattboston/about-myself](https://github.com/mattboston/about-myself)
+-	**Where to file issues**: [https://github.com/mattboston/about-myself](https://github.com/mattboston/about-myself)
 
--   **Example Website**:
-    [Shields.tv](https://shields.tv)
+-   **Example Website**: [Shields.tv](https://shields.tv)
 
 # How to use this image
 

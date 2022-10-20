@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>{{ config['first_name'] }} {{ config['last_name'] }}</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <h1 class="afterclose"> You Closed Terminal ! --> <button class="open"> reopen ? </button> </h1>
+    <div class="window">
+        <div class="controls"> 
+        <button class="buttons close" id="close"></button>
+        <button class="buttons maximize" href="#"></button>
+        <button class="buttons minimize" href="#"></button>
+        <div class="title">{{ config['first_name'] }} {{ config['last_name'] }}</div>
+    </div>
+    <div class="bash">
+        <span id="span">[{{ config['user_name'] }}@{{ config['domain_name'] }} ~]:$</span>
+        <span class="type-it">user info {{ config['user_name'] }}</span>
+        <br >
+        <div class="result">
+            <span id="span2">
+              <br>
+                <img src="/static/{{ config['img'] }}" alt="" style="width:170px;height:170px;margin-right:15px;">
+                {% if config['full_name'] != "" %}
+                  {% for i in range(20-('Name'|length)) %}&nbsp;{% endfor %}
+                  Name : {{ config['first_name'] }} {{ config['last_name'] }}<br>
+                {% endif %}
+                {% if config['title'] != "" %}
+                  {% for i in range(20-('Title'|length)) %}&nbsp;{% endfor %}
+                  Title : {{ config['title'] }}<br>
+                {% endif %}
+                {% if config['website'] != "" %}
+                  {% for i in range(20-('Website'|length)) %}&nbsp;{% endfor %}
+                  Website : <a href="{{ config['website'] }}" target="_blank">{{ config['website'] }}</a><br>
+                {% endif %}
+
+                {% for link in config['links'] %}
+                  {% for i in range(20-(link|length)) %}&nbsp;{% endfor %}
+                  {{ link }} : <a href="{{ config['links'][link]['link'] }}" target="_blank">{{ config['links'][link]['username'] }}</a><br>
+                {% endfor %}
+
+                {% if config['description'] != "" %}
+                {% for i in range(20-('Description'|length)) %}&nbsp;{% endfor %}
+                Description : <div class="description_text">{{ config['description'] }}</div><br>
+                {% endif %}
+            </span>
+            <span id="span3">
+              
+            </span>
+        </div>
+    </div>  
+    <div class="footer">
+      <!-- This Docker image is free.  Please leave this footer here or donate to have it removed. -->
+      <p>Host your own <a href="https://github.com/mattboston/about-myself" target="_blank">About Myself</a> page.</p>
+    </div>
+
+<!-- partial -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js'></script>
+<script  src="./static/script.js"></script>
+
+</body>
+</html>
+
