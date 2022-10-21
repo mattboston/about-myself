@@ -41,6 +41,9 @@ $ docker run -d \
 
 Then you can hit `http://localhost:80` or `http://host-ip:80` in your browser.
 
+# Example
+![Screenshot](/images/screenshot01.png "Screenshot")
+
 # License
 
 This project is licensed under the [GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
