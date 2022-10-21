@@ -1,11 +1,5 @@
 FROM python:3-alpine
 
-LABEL maintainer "Matt Shields" 
-LABEL description "A python application to create a About.me clone"
-LABEL url "https://github.com/mattboston/about-myself"
-LABEL title "About Myself"
-LABEL version "v1.0.0"
-
 ENV version=v1.0.0
 ENV PYTHONPATH=/app
 
@@ -26,3 +20,10 @@ RUN chmod +x /app/entrypoint.sh
 EXPOSE 80
 
 CMD ["./entrypoint.sh"]
+
+LABEL maintainer "Matt Shields" 
+LABEL description "A python application to create a About.me clone"
+LABEL url "https://github.com/mattboston/about-myself"
+LABEL title "About Myself"
+LABEL version "v1.0.0"
+LABEL architecture="amd64"
