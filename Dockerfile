@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-ENV version=v1.0.0
+ENV version=v1.0.1
 ENV PYTHONPATH=/app
 
 WORKDIR /app
@@ -25,5 +25,5 @@ LABEL maintainer "Matt Shields"
 LABEL description "A python application to create a About.me clone"
 LABEL url "https://github.com/mattboston/about-myself"
 LABEL title "About Myself"
-LABEL version "v1.0.0"
+LABEL version "v1.0.1"
 LABEL architecture="amd64"
