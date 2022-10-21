@@ -1,0 +1,36 @@
+{
+  "first_name": "Matt",
+  "last_name": "Shields",
+  "user_name": "matt",
+  "title": "Senior DevOps Engineer",
+  "website": "https://shields.tv",
+  "domain_name": "shields.tv",
+  "description": "I'm a tech savvy professional with history of supporting, automating, and optimizing the deployments of applications on servers by leveraging configuration management and DevOps processes both onsite and in the cloud.",
+  "img": "mypic.jpg",
+  "links": {
+    "GitHub": {
+      "username": "mattboston",
+      "link": "https://github.com/mattboston"
+    },
+    "GitLab": {
+      "username": "mattshields5",
+      "link": "https://gitlab.com/mattshields5"
+    },
+    "DockerHub": {
+      "username": "mattshields5",
+      "link": "https://hub.docker.com/u/mattshields5"
+    },
+    "LinkedIn": {
+      "username": "mattboston",
+      "link": "https://www.linkedin.com/in/mattboston"
+    },
+    "Twitter": {
+      "username": "mattshields74",
+      "link": "https://twitter.com/mattshields74"
+    },
+    "StackShare": {
+      "username": "mattboston",
+      "link": "https://stackshare.io/mattboston"
+    }
+  }
+}
