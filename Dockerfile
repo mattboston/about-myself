@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-ENV version=v1.0.2
+ENV version=v1.0.4
 ENV PYTHONPATH=/app
 
 WORKDIR /app
