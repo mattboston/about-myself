@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__, template_folder='./templates', static_folder='./static')
 
-with open('./config/config.json') as f:
+with open('/app/config/config.json') as f:
     config = json.load(f)
 
 @app.route('/')
