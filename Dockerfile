@@ -9,7 +9,9 @@ RUN python3 -m ensurepip && \
     rm -rf /usr/lib/python*/ensurepip /etc/nginx/http.d/default.conf
 
 COPY app/ /app/
-RUN mkdir -p /app/config
+RUN mkdir -p /app/config /app/static /template
+COPY data/config/* /app/config/
+COPY data/images/* /app/static/
 COPY entrypoint.sh /app/
 
 RUN pip install --upgrade pip
