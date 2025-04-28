@@ -1,7 +1,7 @@
 # FROM python:3-alpine
-FROM python:3.12.4-alpine3.20
+FROM python:3.13-alpine
 
-ENV version=v1.0.8
+ENV version=v1.0.9
 ENV PYTHONPATH=/app
 
 WORKDIR /app
@@ -24,7 +24,7 @@ EXPOSE 80
 
 CMD ["./entrypoint.sh"]
 
-LABEL maintainer "Matt Shields" 
+LABEL maintainer "Matt Shields"
 LABEL description "A python application to create a About.me clone"
 LABEL url "https://github.com/mattboston/about-myself"
 LABEL title "About Myself"
