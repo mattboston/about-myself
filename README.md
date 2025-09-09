@@ -19,9 +19,10 @@ About Myself is an attempt to create an About.Me clone but only for myself.  Fee
 - Create the following sub-folders
   - /project/data/config
   - /project/data/images
-- Create a config.json using the example one here and put in the /projectd/data/config folder
+- Create a config.json using the example one here and put in the /project/data/config folder
 - If you want to use a picture of yourself, put it in the /project/data/images folder
 - Update the config.json with the settings you would like to use
+- Install dependencies using uv: `uv sync`
 
 ## Using Docker Compose
 - Add the docker-compose.yaml file in the /project folder
